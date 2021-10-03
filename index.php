@@ -26,9 +26,25 @@
 
 <h1 class="container text-primary">Hello World!</h1>
 
+    
+
+    <p>
+        <?php
+            if(isset($_GET['submit'])){
+                echo "Email is : " . $_GET['email'];
+                echo "Title is : " . $_GET['title'];
+                echo "Ingredients is : " . $_GET['ingredients'];
+            }
+            else{
+                echo "";
+            }
+         ?></p>
+
     <?php
         include "./forms.php";
     ?>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
