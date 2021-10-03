@@ -24,7 +24,7 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<form  class ="container mt-5" action="index.php" method="GET">
+<form  class ="container mt-5" action="index.php" method="POST">
     <label for="">Email</label>
     <input type="email" name="email"><br>
     <label for="">Pizza Title</label>

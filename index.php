@@ -30,14 +30,28 @@
 
     <p>
         <?php
-            if(isset($_GET['submit'])){
-                echo "Email is : " . $_GET['email'];
-                echo "Title is : " . $_GET['title'];
-                echo "Ingredients is : " . $_GET['ingredients'];
+            if(isset($_POST['submit'])){
+                echo "Email is : " . $_POST['email'];
+                echo "Title is : " . $_POST['title'];
+                echo "Ingredients is : " . $_POST['ingredients'];
             }
             else{
                 echo "";
             }
+
+            // to avoid xss attacks , we need to use htmlspecialchars() . this method converts the characters into HTML entites
+
+            // need to use  instead 
+
+            if(isset($_POST['submit'])){
+                echo "Email is : " . htmlspecialchars($_POST['email']);
+                echo "Title is : " . htmlspecialchars($_POST['title']);
+                echo "Ingredients is : " . htmlspecialchars($_POST['ingredients']);
+            }
+            else{
+                echo "";
+            }
+
          ?></p>
 
     <?php
