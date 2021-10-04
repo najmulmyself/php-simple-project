@@ -1,5 +1,6 @@
 <?php
 
+// include 'index.php';
     
 ?>
 
@@ -27,9 +28,18 @@
 <form  class ="container mt-5" action="index.php" method="POST">
     <label for="">Email</label>
     <input type="email" name="email"><br>
+    <div class="text-danger">
+      <?php echo $erros['email'] ?>
+    </div>
     <label for="">Pizza Title</label>
     <input type="text" name="title"><br>
+    <div class="text-danger">
+      <?php echo $erros['title'] ?>
+    </div>
     <label for="">Ingredients</label>
     <input type="text" name="ingredients"><br>
+    <div class="text-danger">
+      <?php echo $erros['ingredients'] ?>
+    </div>
     <input type="submit" value="submit" name="submit">
 </form>

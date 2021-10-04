@@ -8,6 +8,14 @@
 
 // echo "\n {$total} = {$a} * {$b}";
 
+
+
+$erros = array(
+    "email" => "",
+    "title" => "",
+    "ingredients" => ""
+); 
+
 ?>
 
 <!DOCTYPE html>
@@ -54,19 +62,19 @@
                     echo "Email : " . $_POST['email'];
                 }
                 else{
-                    echo "<small class='text-danger'>Need to Enter Email Address <br></small>";
+                    $erros['email'] = "Email must be required";
                 }
-                if(!empty($_POST['email'])){
+                if(!empty($_POST['title'])){
                     echo "Title : " . $_POST['title'];
                 }
                 else{
-                    echo "<small class='text-danger'>Need to Enter Food Title <br></small>";
+                    $erros['title'] = "Title must be required";
                 }
                 if(!empty($_POST['ingredients'])){
                     echo "Ingredients : " . $_POST['ingredients'];
                 }
                 else{
-                    echo "<small class='text-danger'>Need to Enter At least one ingredient<br></small>";
+                    $erros['ingredients'] = "At least one ingredient must be required";
                 }
             }
             else{
