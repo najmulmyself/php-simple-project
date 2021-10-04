@@ -92,8 +92,8 @@ $erros = array(
 </body>
 </html>
 
-// WHEN USER WILL SUBMIT THE FORM WE NEED TO REDIRECT TO THE OTHER PAGE WE WANT TO DO ACTION :
+<!-- // WHEN USER WILL SUBMIT THE FORM WE NEED TO REDIRECT TO THE OTHER PAGE WE WANT TO DO ACTION : -->
 
-// by doing this we can use a method called header() | we need to pass the property named location
+<!-- // by doing this we can use a method called header() | we need to pass the property named location -->
 
-header("Location : index.php");
+<!-- header("Location : index.php"); -->
