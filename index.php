@@ -30,23 +30,44 @@
 
     <p>
         <?php
-            if(isset($_POST['submit'])){
-                echo "Email is : " . $_POST['email'];
-                echo "Title is : " . $_POST['title'];
-                echo "Ingredients is : " . $_POST['ingredients'];
-            }
-            else{
-                echo "";
-            }
+            // if(isset($_POST['submit'])){
+            //     echo "Email is : " . $_POST['email'];
+            //     echo "Title is : " . $_POST['title'];
+            //     echo "Ingredients is : " . $_POST['ingredients'];
+            // }
+            // else{
+            //     echo "";
+            // }
 
             // to avoid xss attacks , we need to use htmlspecialchars() . this method converts the characters into HTML entites
 
-            // need to use  instead 
+            // need to use the following method instead :
 
             if(isset($_POST['submit'])){
-                echo "Email is : " . htmlspecialchars($_POST['email']);
-                echo "Title is : " . htmlspecialchars($_POST['title']);
-                echo "Ingredients is : " . htmlspecialchars($_POST['ingredients']);
+                // echo "Email is : " . htmlspecialchars($_POST['email']);
+                // echo "Title is : " . htmlspecialchars($_POST['title']);
+                // echo "Ingredients is : " . htmlspecialchars($_POST['ingredients']);
+                 
+                // we will add the validation:
+
+                if(!empty($_POST['email'])){
+                    echo "Email : " . $_POST['email'];
+                }
+                else{
+                    echo "<small class='text-danger'>Need to Enter Email Address <br></small>";
+                }
+                if(!empty($_POST['email'])){
+                    echo "Title : " . $_POST['title'];
+                }
+                else{
+                    echo "<small class='text-danger'>Need to Enter Food Title <br></small>";
+                }
+                if(!empty($_POST['ingredients'])){
+                    echo "Ingredients : " . $_POST['ingredients'];
+                }
+                else{
+                    echo "<small class='text-danger'>Need to Enter At least one ingredient<br></small>";
+                }
             }
             else{
                 echo "";
