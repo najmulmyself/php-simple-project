@@ -91,3 +91,9 @@ $erros = array(
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
+
+// WHEN USER WILL SUBMIT THE FORM WE NEED TO REDIRECT TO THE OTHER PAGE WE WANT TO DO ACTION :
+
+// by doing this we can use a method called header() | we need to pass the property named location
+
+header("Location : index.php");
