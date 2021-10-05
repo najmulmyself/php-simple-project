@@ -11,16 +11,38 @@
 
 //  CONNECTING TO A DATABASE 
 
- $conn = mysqli_connect('localhost' , 'najmul' , '2580');
+ $conn = mysqli_connect('localhost' , 'najmul' , '2580' , 'php-simple-project');
 
  if(!$conn){
     echo "Connection Error";
  }
  else{
-     echo "";
+     echo "connected successfully";
  }
 
+ // GET DATA FROM DATABASE
 
+  // write query to database
+
+$sql = "SELECT title,ingredients,id FROM food";
+
+//make query and get results
+
+$results = mysqli_query($conn, $sql);
+
+// fetch results
+
+$food = mysqli_fetch_all($results , MYSQLI_ASSOC);
+
+// print_r($food);
+
+foreach($food as $key => $value){
+    // echo $value;
+
+    foreach($value as $key => $value1){
+        echo $key . " : " .  $value1 . "<br>";
+    }
+}
 
 $erros = array(
     "email" => "",
