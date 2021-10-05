@@ -9,6 +9,18 @@
 // echo "\n {$total} = {$a} * {$b}";
 
 
+//  CONNECTING TO A DATABASE 
+
+ $conn = mysqli_connect('localhost' , 'najmul' , '2580');
+
+ if(!$conn){
+    echo "Connection Error";
+ }
+ else{
+     echo "";
+ }
+
+
 
 $erros = array(
     "email" => "",
