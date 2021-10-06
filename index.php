@@ -139,3 +139,26 @@ $erros = array(
 <!-- // by doing this we can use a method called header() | we need to pass the property named location -->
 
 <!-- header("Location : index.php"); -->
+
+
+
+
+
+
+
+
+<!-- //  ALTERNATIATE SYNTAX
+
+IF ($this->){
+    ECHO SOMETHING;
+}
+ELSE { echo SOMETHING;
+ }
+
+ // ALTERNATIVE SYNTAX WILL BE
+
+ if ($this->):
+ ECHO SOMETHING;
+ else 
+  echo SOMETHING
+endif; -->
