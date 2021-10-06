@@ -36,11 +36,19 @@ $food = mysqli_fetch_all($results , MYSQLI_ASSOC);
 
 // print_r($food);
 
-foreach($food as $key => $value){
+foreach($food as $foods){
     // echo $value;
 
-    foreach($value as $key => $value1){
-        echo $key . " : " .  $value1 . "<br>";
+    // foreach($value as $key => $value1){
+        // echo $key . " : " .  $value1 . "<br>";
+    // }
+
+    echo htmlspecialchars($foods['title']) . "<br>";
+
+    // explode function
+
+    foreach(explode(',' ,  $foods['ingredients']) as $ingredient){
+        echo $ingredient . "<br>";
     }
 }
 
