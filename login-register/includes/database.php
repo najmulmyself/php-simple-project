@@ -8,7 +8,7 @@
     $conn = mysqli_connect($dbHost , $dbUser , $dbPass , $dbName);
 
     if($conn){
-            echo "connected";
+            // echo "connected";
     }
     else{
         die("Could not connect to database");
@@ -53,5 +53,5 @@
         //   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         // }
 
-        
+
 ?>
