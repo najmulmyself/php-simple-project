@@ -42,14 +42,16 @@
 
         // INSERTING DATA INTO users;
 
-        $sql = "INSERT INTO users (id, username, password)
-        VALUES (2,'jhon', 1234557),
-        (3,'najmul' , '12345na'),
-        (4,'testuser' , 'adjasdjflkasdjf')";
+        // $sql = "INSERT INTO users (username, password)
+        // VALUES ('adele', 1234557),
+        // ('ema' , '12fsdfasdfna'),
+        // ('peter' , '4512654flkasdjf')";
         
-        if (mysqli_query($conn, $sql)) {
-          echo "New record created successfully";
-        } else {
-          echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        }
+        // if (mysqli_query($conn, $sql)) {
+        //   echo "New record created successfully";
+        // } else {
+        //   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        // }
+
+        
 ?>
