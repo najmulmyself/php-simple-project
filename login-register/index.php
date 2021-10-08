@@ -12,12 +12,7 @@
 // }
 
 
-include "includes/header.php";
-?>
-Home
 
-<?php
-    include "includes/footer.php";
 ?>
 
 
