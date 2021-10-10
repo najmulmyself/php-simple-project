@@ -1,4 +1,6 @@
 <?php 
+
+    // include "database.php";
     if(isset($_POST['submit'])){
         // add DB 
         // require 'database.php';
@@ -19,6 +21,6 @@
         //     $sql = "INSERT INTO users (username, password) VALUE($username , $password)";
         // }
 
-        $sql = "INSERT INTO users (username, password) VALUE($username , $password)";
+        $sql = "INSERT INTO users (username, password) VALUES ($username , $password)";
     }
 ?>

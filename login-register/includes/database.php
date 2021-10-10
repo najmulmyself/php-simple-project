@@ -1,6 +1,6 @@
 <?php
-
-    require "register-inc.php";
+            require 'register-inc.php' ;
+    // require "register-inc.php";
 
     $dbHost = "localhost";
     $dbUser = "login-reg";
@@ -11,7 +11,7 @@
     $conn = mysqli_connect($dbHost , $dbUser , $dbPass , $dbName);
 
     if($conn){
-            // echo "connected";
+            echo "connected";
     }
     else{
         die("Could not connect to database");
@@ -59,10 +59,11 @@
 
 
         // CONNETCTION FROM REGISTER-INC
+        $result = mysqli_query($conn , "INSERT INTO users (username, password) VALUES ('baaal' , 545645646)");
 
-        if(mysqli_query($conn, $sql)){
+        if($result){
             echo "New record created successfully";
         } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            echo "Error: " .  "<br>" . mysqli_error($conn);
         }
 ?>
