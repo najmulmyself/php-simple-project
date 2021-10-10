@@ -1,6 +1,10 @@
 <?php 
 
-    // include "database.php";
+    // global $username;
+    // global $password;
+    // global $confirmPassword;
+    // global $sql;
+    // include "register.php";
     if(isset($_POST['submit'])){
         // add DB 
         // require 'database.php';
@@ -22,5 +26,9 @@
         // }
 
         $sql = "INSERT INTO users (username, password) VALUES ($username , $password)";
+
+        echo 'no name printed';
+        echo $username;
+        echo $password;
     }
 ?>

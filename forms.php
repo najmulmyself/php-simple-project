@@ -4,7 +4,7 @@
     
 ?>
 
-<form class="container">
+<!-- <form class="container">
   <div class="mb-3">
     <label for="exampleInputText1" class="form-label">Name</label>
     <input type="text" class="form-control" id="exampleInputText1">
@@ -23,7 +23,7 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form> -->
 
 <form  class ="container mt-5" action="index.php" method="POST">
     <label for="">Email</label>
@@ -44,6 +44,7 @@
     <input type="submit" value="submit" name="submit">
 </form>
 
+<h1>I am from Form</h1>
 
 <!-- // WHEN USER WILL SUBMIT THE FORM WE NEED TO REDIRECT TO THE OTHER PAGE WE WANT TO DO ACTION : -->
 

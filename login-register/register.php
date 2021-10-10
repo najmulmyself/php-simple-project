@@ -9,7 +9,7 @@ include "includes/header.php";
 
 </div>
 <div>
-    <form action="" method="post">
+    <form action="includes/register-inc.php" method="post">
         <input type="text" name="username" placeholder="Username" class="input-f">
         <input type="password" name="password" placeholder="Password" class="input-f">
         <input type="password" name="confirmPassword" placeholder="Confirm Password" class="input-f">
@@ -19,5 +19,20 @@ include "includes/header.php";
 
 <?php
     include "includes/footer.php";
+
+
+    // if(isset($_POST['submit'])){
+    //     // add DB 
+    //     // require 'database.php';
+
+    //     $username = $_POST['username'];
+    //     $password = $_POST['password'];
+    //     $confirmPassword = $_POST['confirmPassword'];
+        
+    //     echo $username;
+    // }
+    // else if(!isset($_POST['submit'])){
+    //     echo " fuck";
+    // }
 
 ?>

@@ -59,11 +59,11 @@
 
 
         // CONNETCTION FROM REGISTER-INC
-        $result = mysqli_query($conn , "INSERT INTO users (username, password) VALUES ('baaal' , 545645646)");
+        // $result = mysqli_query($conn , "INSERT INTO users (username, password) VALUES ($username , $password)");
 
-        if($result){
-            echo "New record created successfully";
-        } else {
-            echo "Error: " .  "<br>" . mysqli_error($conn);
-        }
+        // if(mysqli_query($conn , $sql)) {
+        //     echo "New record created successfully";
+        // } else {
+        //     echo "Error: "  . $sql  .  "<br>" . mysqli_error($conn);
+        // }
 ?>
